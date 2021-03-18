@@ -1,12 +1,13 @@
 const Docente = require("../model/Docente");
 
 class DocenteController {
-  //   async store(req, res) {
-  //     const data = await Docente.create(req.body);
-  //     return res.json(data);
-  //   }
+  async store(req, res) {
+    const data = await Docente.create(req.body);
+    return res.json(data);
+  }
   async index(req, res) {
     const data = await Docente.find();
+    console.log(data);
     return res.json(data);
   }
   //   async remove(req, res) {

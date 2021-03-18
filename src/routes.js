@@ -5,6 +5,7 @@ const DocenteController = require("./app/controller/DocenteController");
 
 //ROTAS ARTIGOS
 routes.post("/docentes-get", DocenteController.index);
+routes.post("/docentes-add", DocenteController.store);
 // routes.post("/artigos-add", ArtigoController.store);
 // routes.post("/artigos-remove", ArtigoController.remove);
 
