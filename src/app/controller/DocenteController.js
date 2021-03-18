@@ -7,7 +7,6 @@ class DocenteController {
   }
   async index(req, res) {
     const data = await Docente.find();
-    console.log(data);
     return res.json(data);
   }
   //   async remove(req, res) {
