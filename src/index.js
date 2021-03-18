@@ -1,5 +1,5 @@
 const express = require("express");
-const db = require("./database/config");
+// const db = require("./database/config");
 const mongoose = require("mongoose");
 var cors = require("cors");
 const app = express();
@@ -7,7 +7,7 @@ const app = express();
  *Database Setup
  */
 mongoose
-  .connect(process.env.VUE_APP_MONGO_URL || db.uri, {
+  .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
